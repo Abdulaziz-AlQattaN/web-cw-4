@@ -1,11 +1,16 @@
-html, body{
-    margin: 0;
-    height: 100%;
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background-color: #ffffff;
 }
 
 /* من الخواص التي يجب تغيرها لكي تصل للمطلوب
-    1. لون الخلفيه
-    2. الطول والعرض
+    1. لون الخلفيه --
+    2. الطول والعرض --
     3. الهوامش
     4. الحواشي
     5. نوع العرض
@@ -13,36 +18,86 @@ html, body{
 
 /* عند الحاجه w3schools قم بالاستعانه بموقع  */
 
-.sidebar{
-    /* pxالعرض هنا يجب ان يكون 120 */
+.main-flex {
+  height: 100vh;
+  display: flex;
+}
+.sidebar {
+  /* pxالعرض هنا يجب ان يكون 120 */
+  width: 150px;
+  background-color: black;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 2px;
 }
 
-.header{
-    /* pxالطول هنا يجب ان يكون 80 */
+.second-flex {
+  width: 89%;
+  height: 95%;
+  margin-left: 3px;
+}
+.header {
+  /* pxالطول هنا يجب ان يكون 80 */
+  width: 100%;
+  height: 80px;
+  display: block;
+  background-color: blue;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 4px;
+  display: flex;
+}
+.header p {
+  font-size: 20px;
 }
 
-.main{
-
+.main {
+  display: block;
+  width: 100%;
+  height: 90.4%;
+  background-color: aqua;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 4px;
 }
 
-a{
-    color: darkgray;
-    /* اجعل شكل اللنك من غير خط اسفل الكلام */
+.main a {
+  text-decoration: none;
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.main a:hover {
+  color: black;
+  background-color: green;
+}
+.main a:active {
+  background-color: tomato;
+  color: white;
+}
+li a {
+  color: darkgray;
+  text-decoration: none;
+  /* اجعل شكل اللنك من غير خط اسفل الكلام */
+}
+li a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
 }
 
 /* !بــونص */
 /* (hover) اجعل اللنك يتغير لونه الى الابيض عند التأشير عليه */
 /* (p) غير محاذاة الفقرات لتصبح بالوسط */
 
-
-
-h1{
-    margin: 0;
-    margin-right: 5px;
+h1 {
+  margin: 0;
+  margin-right: 5px;
 }
 
-h2{
-    margin: 0;
-    margin-left: 5px;
+h2 {
+  margin: 0;
+  margin-left: 5px;
 }
-
